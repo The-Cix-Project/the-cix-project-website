@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Cix Project stewards Cix OS, CBS and the open source systems around them.">
+  <meta name="theme-color" content="#0a0d0f">
+  <title>The Cix Project — systems, directly.</title>
+  <link rel="icon" href="assets/cix-app-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="The Cix Project home"><img src="assets/mark.svg" alt=""><span>the cix project</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#system">The system</a><a href="#stewardship">Stewardship</a><a href="#contribute">Contribute</a>
+      <a class="nav-cta" href="https://cix.world">Visit cix.world <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> An open systems initiative</p>
+        <h1>Keep the<br><em>distance</em> short.</h1>
+        <p class="lede">The Cix Project is the initiative owner for Cix: a source-native systems distribution built around direct Linux primitives, a C control plane, and one coherent resource model.</p>
+        <div class="actions"><a class="button primary" href="https://cix.world">Explore Cix <span>↗</span></a><a class="button secondary" href="#system">Explore the project</a></div>
+        <dl class="facts"><div><dt>Core</dt><dd>Cix OS</dd></div><div><dt>Build</dt><dd>CBS / CPDL</dd></div><div><dt>Stewardship</dt><dd>Open source</dd></div></dl>
+      </div>
+      <div class="hero-diagram" aria-label="The Cix Project connects source, build system and operating system">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="diagram-node source"><span>01</span><strong>source</strong><small>inspectable decisions</small></div>
+        <div class="diagram-node build"><span>02</span><strong>CBS</strong><small>reproducible builds</small></div>
+        <div class="diagram-node os"><span>03</span><strong>Cix OS</strong><small>direct operation</small></div>
+        <div class="diagram-core">CIX<small>PROJECT</small></div>
+      </div>
+    </section>
+
+    <section class="intro section-pad"><p class="kicker">01 / The proposition</p><div><h2>Infrastructure should be<br><span>explainable end to end.</span></h2><p class="large-copy">The Cix Project holds the line between intent and mechanism. That means building the distribution, the build system, the recipe corpus and the release practice as one legible system — with each part public, replaceable and accountable.</p></div></section>
+
+    <section class="system section-pad" id="system"><div class="section-heading"><p class="kicker">02 / A project, not a pile of repos</p><h2>One system.<br><span>Clear boundaries.</span></h2><p>Each repository has a job. Together they make a route from a reviewed source change to a running workload.</p></div>
+      <div class="project-map" role="list">
+        <article class="repo-card active" role="listitem" data-repo="cix"><div class="card-top"><span class="repo-number">01</span><span class="status-label">active</span></div><h3>Cix</h3><p>The operating system and control plane: containers, networks, hardware, services and the REST API.</p><a href="https://github.com/The-Cix-Project/cix">Open repository <span>↗</span></a></article>
+        <article class="repo-card" role="listitem" data-repo="cbs"><div class="card-top"><span class="repo-number">02</span><span class="status-label">active</span></div><h3>CBS</h3><p>Cix Build System. Parses CPDL, executes package phases, and emits verifiable CIXPKG artefacts.</p><a href="https://github.com/The-Cix-Project/cix-build-system">Open repository <span>↗</span></a></article>
+        <article class="repo-card" role="listitem" data-repo="recipes"><div class="card-top"><span class="repo-number">03</span><span class="status-label">active</span></div><h3>Recipes</h3><p>Versioned package, image and deployment definitions: the reviewed input to the build path.</p><a href="https://github.com/The-Cix-Project/cix-recipes">Open repository <span>↗</span></a></article>
+        <article class="repo-card" role="listitem" data-repo="cache"><div class="card-top"><span class="repo-number">04</span><span class="status-label">active</span></div><h3>Cache</h3><p>Published binary artefacts and signed installers. A cache, never a catalogue or trust boundary.</p><a href="https://github.com/The-Cix-Project/cix-cache">Open repository <span>↗</span></a></article>
+      </div>
+      <div class="map-note"><span class="map-line"></span><p><strong id="map-title">The operating system</strong><span id="map-copy">— the place where the project’s principles become an operator’s reality.</span></p></div>
+    </section>
+
+    <section class="principles section-pad" id="stewardship"><p class="kicker">03 / What an owner protects</p><h2>Stewardship is a<br><span>technical responsibility.</span></h2><div class="principle-grid"><article><b>01</b><h3>Keep the contract visible.</h3><p>Document the resource model, API boundaries, version identity and compatibility honestly. No hidden source of truth.</p></article><article><b>02</b><h3>Make releases verifiable.</h3><p>Publish keys independently, keep old keys for old artefacts, and make a release reproducible from the source trail.</p></article><article><b>03</b><h3>Prefer durable interfaces.</h3><p>Use ADRs and tests for hard-to-reverse decisions. Let implementation move without making operators guess.</p></article><article><b>04</b><h3>Grow the contributor path.</h3><p>Give builders a clear first issue, a working local loop, and a reason to trust that their work can land.</p></article></div></section>
+
+    <section class="contribute section-pad" id="contribute"><div><p class="kicker">04 / Find your entry point</p><h2>There is work at<br><span>every layer.</span></h2><p>Read the source, build a package, improve a guide, or help make the project easier to operate. Start with the contract that matches your curiosity.</p></div><div class="entry-list"><a href="https://github.com/The-Cix-Project/cix/blob/master/CONTRIBUTING.md"><span>For contributors</span><strong>Read the contribution guide</strong><i>→</i></a><a href="https://github.com/The-Cix-Project/cix-build-system"><span>For builders</span><strong>Build with CBS and CPDL</strong><i>→</i></a><a href="https://github.com/The-Cix-Project/cix/tree/master/docs"><span>For readers</span><strong>Browse the documentation</strong><i>→</i></a></div></section>
+
+    <section class="closing"><p class="kicker">The Cix Project</p><h2>Source-native systems.<br><em>Directly.</em></h2><div class="actions"><a class="button primary" href="https://cix.world">Go to cix.world <span>↗</span></a><a class="button secondary" href="https://github.com/The-Cix-Project">Visit the project on GitHub <span>↗</span></a></div></section>
+  </main>
+  <footer><a class="brand" href="#top"><img src="assets/mark.svg" alt=""><span>the cix project</span></a><p>Source-native systems. Directly.</p><div><a href="https://github.com/The-Cix-Project/cix">Cix</a><a href="https://github.com/The-Cix-Project/cix-build-system">CBS</a><a href="https://github.com/The-Cix-Project/cix/blob/master/TRADEMARK.md">Trademark</a></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

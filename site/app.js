@@ -21,3 +21,18 @@ document.querySelectorAll('.repo-card').forEach((card) => {
     document.querySelector('#map-copy').textContent = note[1];
   });
 });
+
+const revealTargets = document.querySelectorAll('.project-map, .principle-grid');
+if ('IntersectionObserver' in window) {
+  const reveal = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealTargets.forEach((target) => reveal.observe(target));
+} else {
+  revealTargets.forEach((target) => target.classList.add('is-visible'));
+}
